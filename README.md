@@ -14,4 +14,4 @@ The study classified 12,731 GPCR sequences. Four classic machine-learning alg
 
 
 ### User Guide
-If you are the first time to use this program, please download the code and choose folder "seqToResult" and follow the readme in it.
+If you are the first time to use this program, please download the code and choose folder "GPCR-KD-PRO/GPCR-KD-master/seqToResult" and follow the readme in it.
