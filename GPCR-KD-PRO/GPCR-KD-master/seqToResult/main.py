@@ -45,7 +45,7 @@ def get_data():
     x = []
     y = []
     count_of_sqe = 0
-    print("处理进度（0,1）：")
+    print("处理进度：")
     for i, (family_name, family_data) in enumerate(all_family_data.items()):
         family_names[i] = family_name
         for seq in family_data:
@@ -53,9 +53,11 @@ def get_data():
 
             percent = count_of_sqe/sum_num
             sys.stdout.write("%.4f" % percent);
+            sys.stdout.write("%");
             x.append(extract_feature_of_a_seq(seq, features))
             y.append(i)
-            sys.stdout.write("%\r");
+
+            sys.stdout.write("\r");
             sys.stdout.flush();
         sys.stdout.write("%\r");
         sys.stdout.flush();

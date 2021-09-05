@@ -27,7 +27,7 @@ def classifier(x, y):
     return clf
 
 print(time.ctime(), ":" ,'开始读取数据!')
-with open("gds_data1", 'rb') as f:
+with open("data", 'rb') as f:
     family_names = pickle.load(f)
     x = pickle.load(f)
     y = pickle.load(f)
