@@ -51,7 +51,7 @@ def get_data():
         for seq in family_data:
             count_of_sqe+=1
 
-            percent = count_of_sqe/sum_num
+            percent = count_of_sqe*100/sum_num
             sys.stdout.write("%.4f" % percent);
             sys.stdout.write("%");
             x.append(extract_feature_of_a_seq(seq, features))
