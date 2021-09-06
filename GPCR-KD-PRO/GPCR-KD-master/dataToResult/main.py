@@ -45,6 +45,10 @@ except Exception as e:
 test_num = len(x_test)
 
 print(time.ctime(), ":" ,"开始训练!")
+
+
+classifier_factory = ["MLPClassifier(hidden_layer_sizes=(2000,2000), max_iter=1000)","RandomForestClassifier()","SVC()","GaussianNB()"]
+
 clf = RandomForestClassifier()
 clf.fit(x_train, y_train)
 print(time.ctime(), ":" ,"开始预测!")
