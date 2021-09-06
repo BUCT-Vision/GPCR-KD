@@ -99,7 +99,7 @@ except Exception as e:
 
 print(time.ctime(), ":", "开始训练!")
 
-classifier_factory = ["MLPClassifier(hidden_layer_sizes=(2000,2000), max_iter=1000)","RandomForestClassifier","SVC","GaussianNB"]
+classifier_factory = ["MLPClassifier(hidden_layer_sizes=(2000,2000), max_iter=1000)","RandomForestClassifier()","SVC()","GaussianNB()"]
 
 clf = SVC()
 clf.fit(x_train, y_train)
