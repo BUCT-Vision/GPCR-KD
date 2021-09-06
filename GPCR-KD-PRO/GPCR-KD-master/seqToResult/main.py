@@ -66,15 +66,6 @@ def get_data():
     return x, y
 
 
-def classifier_factory(classifier_name):
-    if classifier_name == "MLPClassifier":
-        return MLPClassifier(hidden_layer_sizes=(2000,2000), max_iter=1000)
-    elif classifier_name == "SVC":
-        return SVC()
-    elif classifier_name =="RandomForestClassifier":
-        return RandomForestClassifier()
-    elif classifier_name == "GaussianNB":
-        return GaussianNB()
 
 def preprocess(x):
     X_train = preprocessing.scale(np.array(x))
@@ -107,6 +98,9 @@ except Exception as e:
     print(time.ctime(), ":","读取长度失败：", e)
 
 print(time.ctime(), ":", "开始训练!")
+
+classifier_factory = ["MLPClassifier(hidden_layer_sizes=(2000,2000), max_iter=1000)","RandomForestClassifier","SVC","GaussianNB"]
+
 clf = SVC()
 clf.fit(x_train, y_train)
 print(time.ctime(), ":", "开始预测!")
