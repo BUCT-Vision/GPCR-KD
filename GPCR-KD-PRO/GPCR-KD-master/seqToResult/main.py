@@ -80,7 +80,8 @@ def classifier(x, y):
 
 print(time.ctime(), ":", '开始处理数据!')
 x, y = get_data()
-print("处理完成！")
+
+print("处理完成~")
 
 print(time.ctime(), ":", '开始写入数据到文件!')
 with open("data", 'wb') as f:
