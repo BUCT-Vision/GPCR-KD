@@ -68,6 +68,7 @@ def get_data():
 
 
 def preprocess(x):
+    
     X_train = preprocessing.scale(np.array(x))
     return X_train
 
