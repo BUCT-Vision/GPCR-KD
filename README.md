@@ -27,8 +27,11 @@
 	pycharm (https://www.jetbrains.com/pycharm/)
 
 	其他第三方软件包： sklearn, numpy
-
-
+        
+	实验数据再data文件夹里，因为不是很大， 所以直接上传了方便复用。
+        
+	
+ 
             
 
 
